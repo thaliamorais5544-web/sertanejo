@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sertanejo Show</title>
+  <style>
+    /* Reset de Estilos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Barra de Navegação */
+    nav {
+      background-color: #2d2d2d;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Seção de Hero (Imagem de fundo) */
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1565066849-384c7e4b91b7?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mnx8c2VydGFuZWphfGVufDB8fHx8fDE2Nzg0NzUyMzg&ixlib=rb-1.2.1&q=80&w=1080') center/cover no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 24px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f39c12;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e67e22;
+    }
+
+    /* Seções de conteúdo */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      color: #2d2d2d;
+    }
+
+    .artistas,
+    .agenda {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+      justify-items: center;
+    }
+
+    .artistas div,
+    .agenda div {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      text-align: center;
+    }
+
+    .artistas img,
+    .agenda img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .agenda .data {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #2d2d2d;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#artistas">Artistas</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção Hero (Imagem de fundo) -->
+  <div class="hero" id="home">
+    <h1>Bem-vindo ao Sertanejo Show</h1>
+    <p>Os maiores sucessos do Sertanejo em um só lugar!</p>
+    <a href="#agenda" class="btn">Veja a Agenda de Shows</a>
+  </div>
+
+  <!-- Artistas -->
+  <section id="artistas">
+    <h2>Conheça os Artistas</h2>
+    <div class="artistas">
+      <div>
+        <img src="https://images.unsplash.com/photo-1536715600562-9925efef8cdb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8NXx8Y2VhbyUyMGFydGlzdGElMjBzZXJ0YW5lam98ZW58MHx8fHwxNjc4NzQ4MjQy&ixlib=rb-1.2.1&q=80&w=1080" alt="Artista 1">
+        <h3>Artista 1</h3>
+        <p>O melhor do sertanejo universitário.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1517433456452-0d9a2b567d7e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Mnx8Y2VhbyUyMGFydGlzdGElMjBzZXJ0YW5lam98ZW58MHx8fHwxNjc4NzQ4MjQy&ixlib=rb-1.2.1&q=80&w=1080" alt="Artista 2">
+        <h3>Artista 2</h3>
+        <p>Uma voz marcante e uma carreira de sucesso.</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1536715600562-9925efef8cdb?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8Y2VhbyUyMGFydGlzdGElMjBzZXJ0YW5lam98ZW58MHx8fHwxNjc4NzQ4MjQy&ixlib=rb-1.2.1&q=80&w=1080" alt="Artista 3">
+        <h3>Artista 3</h3>
+        <p>Tradicional e apaixonado pelo sertanejo raiz.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda de Shows -->
+  <section id="agenda">
+    <h2>Agenda de Shows</h2>
+    <div class="agenda">
+      <div>
+        <img src="https://images.unsplash.com/photo-1531361968012-8fcb5896352e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8M3x8Y2VhbyUyMGFydGlzdGElMjBzZXJ0YW5lam98ZW58MHx8fHwxNjc4NzQ4MjQy&ixlib=rb-1.2.1&q=80&w=1080" alt="Show 1">
+        <h3>Show em São Paulo</h3>
+        <p>Data: 15 de Outubro</p>
+        <p class="data">Local: Arena Sertanejo</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1531361968012-8fcb5896352e?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8N3x8Y2VhbyUyMGFydGlzdGElMjBzZXJ0YW5lam98ZW58MHx8fHwxNjc4NzQ4MjQy&ixlib=rb-1.2.1&q=80&w=1080" alt="Show 2">
+        <h3>Show em Rio de Janeiro</h3>
+        <p>Data: 22 de Outubro</p>
+        <p class="data">Local: Estádio do Sertanejo</p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8Nnx8Y29uY2VydG98ZW58MHx8fHwxNjc4NzQ4MjQy&ixlib=rb-1.2.1&q=80&w=1080" alt="Show 3">
+        <h3>Show em Brasília</h3>
+        <p>Data: 30 de Outubro</p>
+        <p class="data">Local: Parque Sertanejo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>Para mais informações sobre eventos ou artistas, entre em contato conosco.</p>
+    <p>Email: <a href="mailto:contato@sertanejoshows.com">contato@sertanejoshows.com</a></p>
+    <p>WhatsApp: (11) 91234-5678</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Sertanejo Show - Todos os direitos reservados.</p>
+    <p>Desenvolvido com ❤️ para os amantes do sertanejo.</p>
+  </footer>
+
+</body>
+</html>
